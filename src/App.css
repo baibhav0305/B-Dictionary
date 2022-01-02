@@ -10,13 +10,13 @@ body {
   background-color: #345b63;
 }
 
-.App {
-  /* background-color: #43434457; */
-}
+/* .App {
+  background-color: #43434457;
+} */
 
 .input {
   margin: 40px auto;
-  width: 30%;
+  width: 40%;
   /* padding: 10px; */
 }
 .input input {
@@ -37,13 +37,13 @@ body {
   text-decoration: underline;
 }
 .card {
-  margin: 10px auto;
+  margin: 20px auto;
   width: 30%;
   height: 300px;
   border-radius: 20px;
   /* scroll-margin-right: 30px; */
   box-shadow: 0 5px 25px rgba(46, 46, 46, 0.932);
-  opacity: 0.65;
+  /* opacity: 0.65; */
   transition: 0.25s;
   background: rgba(255, 255, 255, 0.171);
   /* background-color: #87888d18; */
@@ -51,9 +51,9 @@ body {
   color: aliceblue;
 }
 .card:hover {
-  opacity: 1;
+  /* opacity: 1; */
   /* background: rgba(255, 255, 255, 0.308); */
-  box-shadow: 0 10px 10px rgba(106, 148, 160, 0.25);
+  box-shadow: 0 10px 10px rgba(106, 148, 160, 0.39);
 }
 .scroll {
   overflow-y: scroll;
@@ -71,7 +71,7 @@ body {
 }
 .scroll audio {
   height: 30px;
-  width: 70%;
+  width: 50%;
 }
 
 /* .style {
@@ -94,8 +94,8 @@ h1 {
   border: 0.2rem solid #fff;
   border-radius: 2rem;
   padding: 0.3em;
-  box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem #bc13fe,
-    0 0 0.8rem #bc13fe, 0 0 2.8rem #bc13fe, inset 0 0 1.3rem #bc13fe;
+  box-shadow: 0 0 0.12rem #fff, 0 0 0.12rem #fff, 0 0 1.2rem #bc13fe,
+    0 0 0.38rem #bc13fe, 0 0 1.8rem #bc13fe, inset 0 0 0.73rem #bc13fe;
 }
 
 .footer {
@@ -111,4 +111,15 @@ h1 {
   font-weight: bolder;
   /* background-color: #cddeff; */
   background-color: #d4e9dc;
+}
+
+@media screen and (max-width: 850px) {
+  .card {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card {
+    width: 80%;
+  }
 }
