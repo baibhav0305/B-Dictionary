@@ -22,7 +22,11 @@ const Card = ({ word, phonetic, audio, origin, meaning }) => {
         )}
         {meaning.map((mean) => {
           return (
-            <Mean speech={mean.partOfSpeech} definitions={mean.definitions} />
+            <Mean
+              speech={mean.partOfSpeech}
+              definitions={mean.definitions}
+              key={mean.definitions[0].definition}
+            />
           );
         })}
       </div>

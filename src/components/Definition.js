@@ -12,6 +12,7 @@ const Definition = ({ result }) => {
             audio={res.phonetics[0].audio}
             origin={res.origin}
             meaning={res.meanings}
+            key={Math.random()}
           />
         );
       })}

@@ -6,7 +6,7 @@ const Mean = ({ speech, definitions }) => {
       <h5>{speech}</h5>
       {definitions.map((def) => {
         return (
-          <li>
+          <li key={def.definition}>
             <span>{def.definition}</span>
             {def.example && (
               <p>
